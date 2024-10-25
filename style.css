@@ -15,7 +15,7 @@
 .header {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(var(--background-color), var(--background-color)), url(images/image_2.jpg);
+    background-image: linear-gradient(var(--background-color), var(--background-color)), url(images/background.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -49,7 +49,6 @@
     color: white;
     font-weight: 700;
     font-family: 'Roboto', sans-serif; /* Use the selected Google Font */
-
 }
 
 .nav-links {
@@ -112,6 +111,65 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
 }
 
+/* Contact Us styles */
+.contact {
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto; /* Center the contact section */
+    background: rgba(0, 0, 0, 0.7); /* Dark background */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    position: relative; /* Allow positioning relative to parent */
+    bottom: 20px; /* Adjusted position above the footer */
+    left: 0; /* Align left */
+}
+
+.contact h2 {
+    text-align: center;
+    color: var(--text-color); /* Use text color variable */
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact label {
+    margin-bottom: 5px;
+    color: var(--text-color); /* Light text for labels */
+}
+
+.contact input {
+    width: 200px; /* Set width for name and email input */
+    margin: 0 auto 15px auto; /* Center the input boxes with margin */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact textarea {
+    height: 100px; /* Increase height for the message box */
+    width: 500px; /* Set width for the message box */
+    margin-bottom: 15px; /* Space below the message box */
+}
+
+.contact button {
+    padding: 10px;
+    background: var(--primary-color); /* Primary color for button */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth background change */
+    margin: 10px auto; /* Center button */
+    display: block; /* Ensure block display for centering */
+}
+
+.contact button:hover {
+    background: var(--secondary-color); /* Change background on hover */
+}
+
 /* Footer styles */
 footer {
     background-color: rgba(108, 91, 91, 0.7); /* Match the semi-transparent black */
@@ -125,8 +183,6 @@ footer {
     width: 100%; /* Full width */
 }
 
-
-
 /* Button styles */
 #translate-btn {
     background-color: var(--primary-color); /* Primary color for button */
@@ -137,7 +193,8 @@ footer {
     cursor: pointer; /* Pointer cursor on hover */
     font-size: 16px; /* Font size */
     transition: background-color 0.3s ease; /* Smooth background change */
-    margin-bottom: 10px; /* Space between button and text */
+    margin: 10px auto; /* Center button */
+    display: block; /* Ensure block display for centering */
 }
 
 #translate-btn:hover {
@@ -152,7 +209,6 @@ footer {
     margin-left: 5px; /* Space between text and logo */
 }
 
-
 /* Link styles */
 footer a {
     color: var(--primary-color); /* Link color */
@@ -162,4 +218,3 @@ footer a {
 footer a:hover {
     text-decoration: underline; /* Underline on hover for clarity */
 }
-

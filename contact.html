@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/passport_photo.png"> <!-- PNG favicon -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Google Font -->
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank">
+                <img src="images/IMG-20220712-WA0026__1_-removebg-preview.png" alt="Logo">
+            </a>
+            <h1 data-en="Two Steps Solutions Inc." data-he='שני צעדים פתרונות בע"מ'>Two Steps Solutions Inc.</h1>
+            <div class="nav-links">
+                <ul class="menu">
+                    <li><a href="index.html" data-en="Home" data-he="בית">Home</a></li> <!-- Link to Home -->
+                    <li><a href="about.html" data-en="About" data-he="עלינו">About</a></li>
+                    <li><a href="products.html" data-en="Our Products" data-he="המוצרים שלנו">Our Products</a></li>
+                    <li><a href="contact.html" data-en="Contact Us" data-he="צור קשר">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="contact">
+            <h2 data-en="Contact Us" data-he="צור קשר">Contact Us</h2>
+            <form action="#" method="post">
+                <label for="name" data-en="Name" data-he="שם">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email" data-en="Email" data-he="אימייל">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message" data-en="Message" data-he="הודעה">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" data-en="Submit" data-he="שלח">Submit</button>
+            </form>
+        </section>
+    </section>
+
+    <footer>
+        <button id="translate-btn" data-en="English" data-he="עברית">עברית</button>
+        <p>&copy; 2024 Two Steps Solution Inc. | All rights reserved.</p>
+        <p>Created by Amit Ben Zaken
+            <a href="https://github.com/ben-amit" target="_blank">
+                <img src="images/github-logo.png" alt="GitHub Logo" class="footer-logo">
+            </a>
+        </p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
