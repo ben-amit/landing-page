@@ -21,34 +21,35 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; /* Change to flex-start to raise content */
+    padding-top: 50px; /* Add padding at the top */
     color: rgb(255, 255, 255);
     text-align: center;
 }
 
 /* Navigation styles */
 .header nav {
-    position: absolute;
-    top: 20px;
-    left: 20px;
     display: flex;
-    align-items: center;
-    width: calc(100% - 40px);
-    justify-content: space-between;
+    align-items: flex-start; /* Align items to the start (top) */
+    width: 100%;
+    justify-content: flex-start; /* Align items to the left */
+    padding: 20px; /* Add padding */
 }
 
 .header nav img { 
     width: 80px; 
     height: auto;
-    margin-right: 10px;
+    margin-right: 10px; /* Space between logo and text */
 }
 
 .header nav h1 {
     margin: 0;
-    font-size: 28px;
+    font-size: 24px; /* Adjusted font size */
     color: white;
     font-weight: 700;
     font-family: 'Roboto', sans-serif; /* Use the selected Google Font */
+    line-height: 5; /* Adjust line height for better alignment */
+    margin-top: -10px; /* Move text higher, adjust value as needed */
 }
 
 .nav-links {
@@ -120,8 +121,7 @@
     border-radius: 12px; /* Rounded corners */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
     position: relative; /* Allow positioning relative to parent */
-    bottom: 20px; /* Adjusted position above the footer */
-    left: 0; /* Align left */
+    margin-bottom: 100px; /* Add margin at the bottom to ensure space above footer */
 }
 
 .contact h2 {
@@ -176,8 +176,8 @@ footer {
     color: var(--text-color); /* Use your text color variable */
     padding: 20px; /* Padding for spacing */
     text-align: center; /* Center-align the text */
-    position: absolute; /* Position it absolutely */
-    bottom: 0; /* Stick to the bottom of the header */
+    position: relative; /* Change to relative for proper placement */
+    margin-top: -20px; /* Pull it up to overlap margin */
     left: 0; /* Align to the left */
     right: 0; /* Align to the right */
     width: 100%; /* Full width */
@@ -217,4 +217,31 @@ footer a {
 
 footer a:hover {
     text-decoration: underline; /* Underline on hover for clarity */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .header nav {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .header nav h1 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+        margin-top: 0; /* Reset top margin */
+    }
+
+    .header nav img {
+        margin-bottom: 10px; /* Space below the logo */
+    }
+
+    .about, .contact {
+        padding: 20px; /* Reduce padding for smaller screens */
+        width: 90%; /* Set width to a percentage for responsiveness */
+    }
+
+    .contact input, .contact textarea {
+        width: 100%; /* Full width for inputs on smaller screens */
+    }
 }
