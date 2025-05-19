@@ -1,48 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Two Steps</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="images/passport_photo.png"> <!-- PNG favicon -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Google Font -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — Amit Ben Zaken</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/passport_photo.png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet"
+  >
 </head>
 <body>
-    <section class="header">
-        <nav>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank">
-                <img src="images/IMG-20220712-WA0026__1_-removebg-preview.png" alt="Logo">
-            </a>
-            <h1 data-en="Two Steps Solutions Inc." data-he='שני צעדים פתרונות בע"מ'>Two Steps Solutions Inc.</h1>
-            <div class="nav-links">
-                <ul class="menu">
-                    <li><a href="index.html" data-en="Home" data-he="בית">Home</a></li> <!-- Home Button -->
-                    <li><a href="index.html" data-en="About" data-he="עלינו">About</a></li>
-                    <li><a href="index.html" data-en="Our Products" data-he="המוצרים שלנו">Our Products</a></li>
-                    <li><a href="contact.html" data-en="Contact Us" data-he="צור קשר">Contact Us</a></li>
-                </ul>
-            </div>
-        </nav>
-        <section class="about">
-            <p data-en="Welcome to Two Steps, a pioneering AI solutions company dedicated to transforming the way businesses tackle challenges through the power of artificial intelligence. Our mission is to provide innovative, data-driven solutions that address your unique needs, from automating routine tasks to offering predictive insights that drive better decision-making. With expertise in machine learning, natural language processing, and deep learning, Two Steps is your partner in harnessing the full potential of AI to unlock new opportunities and streamline operations. Let us help you take the next step towards a smarter, more efficient future."
-               data-he="ברוכים הבאים לשני צעדים, חברה פורצת דרך לפתרונות בינה מלאכותית המוקדשת לשינוי האופן שבו עסקים מתמודדים עם אתגרים באמצעות כוח הבינה המלאכותית. המשימה שלנו היא לספק פתרונות חדשניים ומונעי נתונים העונים על הצרכים הייחודיים שלך, החל מאוטומציה של משימות שגרתיות ועד מתן תובנות חיזוי שמניעות קבלת החלטות טובה יותר. עם מומחיות בלמידת מכונה, עיבוד שפה טבעית ולמידה עמוקה, שני צעדים היא השותפה שלך במיצוי הפוטנציאל המלא של AI כדי לפתוח הזדמנויות חדשות ולייעל פעולות. תן לנו לעזור לך לעשות את הצעד הבא לקראת עתיד חכם ויעיל יותר.">
-                        Welcome to Two Steps, a pioneering AI solutions company dedicated to transforming the way businesses tackle challenges through the power of artificial intelligence. Our mission is to provide innovative, data-driven solutions that address your unique needs, from automating routine tasks to offering predictive insights that drive better decision-making. With expertise in machine learning, natural language processing, and deep learning, Two Steps is your partner in harnessing the full potential of AI to unlock new opportunities and streamline operations. Let us help you take the next step towards a smarter, more efficient future.
-            </p>
-        </section>
-    </section>
-        
-    <footer>
-        <button id="translate-btn" data-en="English" data-he="עברית">עברית</button>
-        <p>&copy; 2024 Two Steps Solution Inc. | All rights reserved.</p>
-        <p>Created by Amit Ben Zaken
-            <a href="https://github.com/ben-amit" target="_blank">
-                <img src="images/github-logo.png" alt="GitHub Logo" class="footer-logo">
-            </a>
-        </p>
-    </footer>
-    
+  <!-- Shared header + nav will inject here -->
+  <div id="header-placeholder"></div>
 
-    <script src="script.js"></script>
+  <!-- Your page-specific content -->
+  <main>
+    <section id="about" class="about">
+      <p
+        data-en="Hi there, I’m Amit Ben Zaken, a Computer Science student at the Technion with an emphasis in Data Science. I’m passionate about AI, I've taken courses like Fundamentals of AI, ML, Deep Learning, and Signal Processing. With a strong background in programming and software development, I’m always eager to learn new technologies. Also, yes, I built this entire website myself."
+        data-he="היי, שמי עמית בן זקן, ואני סטודנט למדעי המחשב בטכניון עם מגמת מדעי הנתונים. אני נלהב מבינה מלאכותית—השתתפתי בקורסים כמו יסודות הבינה המלאכותית, למידת מכונה, למידה עמוקה ועיבוד אותות. עם רקע חזק בתכנות ופיתוח תוכנה, אני תמיד מצפה ללמוד טכנולוגיות חדשות. וכן—בניית האתר הזה בוצעה על ידי בעצמי."
+      >
+      </p>
+    </section>
+  </main>
+
+  <!-- Shared footer will inject here -->
+  <div id="footer-placeholder"></div>
+
+  <script src="script.js"></script>
 </body>
 </html>
