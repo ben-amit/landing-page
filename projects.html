@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects — Amit Ben Zaken</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" type="image/png" href="images/passport_photo.png"/>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!-- shared header -->
+  <div id="header-placeholder"></div>
+  <!-- shared nav -->
+  <div id="nav-placeholder"></div>
+
+  <!-- page-specific Projects content -->
+  <main>
+    <section id="projects" class="projects">
+      <h2 data-en="Projects" data-he="פרויקטים">Projects</h2>
+      <div class="project-list">
+
+        <!-- 1) MineSweeper -->
+        <div class="project-item">
+          <h3 data-en="MineSweeper" data-he="מערכת MineSweeper">MineSweeper</h3>
+          <p
+            data-en="A native Android Minesweeper game app built in Java using Android Studio. Features include dynamic board generation, save/load functionality, flagging mechanics, and clear win/lose animations."
+            data-he="אפליקציית מיינסוויפר לאנדרואיד שבניתי ב-ג'אבה ב-אנדרואיד סטודיו .כוללת יצירת לוח דינמית, שמירה וטעינה, הצבת דגלים ואנימציות ניצחון/הפסד ברורות."
+          >
+          </p>
+          <p class="project-link">
+            <a
+              href="assets/MineSweeper.pdf"
+              target="_blank"
+              data-en="View MineSweeper PDF"
+              data-he="צפייה ב-PDF של MineSweeper"
+            >
+              View MineSweeper PDF
+            </a>
+          </p>
+          <p
+            data-en="Tech Stack: Java; Android Studio; Eclipse"
+            data-he="טכנולוגיות: Java; Android Studio; Eclipse"
+          >
+            Tech Stack: Java; Android Studio; Android SDK (API 16); Eclipse; Genymotion emulator; Devices: Nexus 5X, OnePlus 3T, Galaxy S7.
+          </p>
+          
+        </div>
+
+        <!-- 2) Autoencoder Classifier -->
+        <div class="project-item">
+          <h3
+            data-en="Autoencoder Classifier"
+            data-he="מסווג אוטואנקודר"
+          >
+            Autoencoder Classifier
+          </h3>
+          <p
+            data-en="I built autoencoder-based models to reconstruct and classify images from the MNIST and CIFAR-10 dataset. I trained the autoencoder on raw images and then used its encoder outputs to train a separate classifier. Next, I integrated the classification objective directly into the autoencoder training to improve accuracy. I also applied contrastive learning (using SimCLR’s NT-Xent loss) to shape the representation space, which led to clearer class separation."
+            data-he="פיתחתי מודלים מבוססי אוטואנקודר לשחזור וסיווג תמונות מניסט ו-סיפאר-10. אימנתי את האוטואנקודר על תמונות ומשם אימנתי מסווג על הפלט שלו. לאחר מכן שילבתי את המסווג באימון האוטואנקודר כדי לשפר דיוק. בנוסף השתמשתי בלמידה קונטרסטיבית כדי לעצב את מרחב הייצוג, מה שהניב הפרדה ברורה יותר"
+          >
+            I built autoencoder-based models to reconstruct and classify images from the MNIST and CIFAR-10 datasets. First, I trained the autoencoder on raw images and then used its encoder outputs to train a separate classifier. Next, I integrated the classification objective directly into the autoencoder training to improve accuracy. Finally, I applied contrastive learning (using SimCLR’s NT-Xent loss) to shape the representation space, which led to clearer class separation in t-SNE visualizations.
+          </p>
+          <p
+            data-en="Tech Stack: Python; PyTorch; NumPy; MNIST &amp; CIFAR-10; Contrastive Learning (SimCLR); t-SNE (scikit-learn); Matplotlib."
+            data-he="טכנולוגיות: Python; PyTorch; NumPy; MNIST &amp; CIFAR-10; למידה קונטרסטיבית (SimCLR); t-SNE (scikit-learn); Matplotlib."
+          >
+            Tech Stack: Python; PyTorch; NumPy; MNIST &amp; CIFAR-10; Contrastive Learning (SimCLR); t-SNE (scikit-learn); Matplotlib.
+          </p>
+        </div>
+
+        <div class="project-item">
+            <h3 data-en="This Landing Page" data-he="דף נחיתה">Landing Page</h3>
+            <p
+              data-en="A landing page featuring dynamic navigation and a language toggle via JavaScript partial injection. Deployed on GitHub Pages."
+              data-he="דף נחיתה עם תפריט דינמי ומחליף שפות בעזרת טעינת חלקים ב-ג'אבהסקריפט. מופעל ב-גיטהאב פייג'ס."
+            >
+              A one-page static landing page built from my TwoSteps repository, featuring dynamic navigation and a language toggle via JavaScript partial injection. It’s hero-first, fully responsive, and deployed on GitHub Pages.
+            </p>
+            <p
+              data-en="Tech Stack: HTML; CSS; JavaScript; Git; GitHub Pages; VS Code."
+              data-he="טכנולוגיות: HTML; CSS; JavaScript; Git; GitHub Pages; VS Code."
+            >
+              Tech Stack: HTML; CSS; JavaScript; Git; GitHub Pages; VS Code.
+            </p>
+          </div>
+          
+
+      </div>
+    </section>
+  </main>
+
+  <!-- shared footer -->
+  <div id="footer-placeholder"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
