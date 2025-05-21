@@ -566,3 +566,23 @@ html, body {
 #grades h2 {
   color: var(--primary-color);
 }
+
+.download-btn {
+  text-align: center;
+  margin: 16px 0;
+}
+
+.download-btn a {
+  display: inline-block;
+  background: var(--primary-color);
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: background 0.2s;
+}
+
+.download-btn a:hover {
+  background: var(--secondary-color);
+}
