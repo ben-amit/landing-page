@@ -520,3 +520,49 @@ html, body {
   left: 50%;
   transform: translate(-50%, -55%); /* Adjust vertical offset */
 }
+
+@media (max-width: 600px) {
+  /* Don’t force the header to stretch—let it wrap naturally */
+  .header {
+    flex: none;
+  }
+
+  /* Tighter, smaller about box */
+  .about {
+    max-width: 90%;      /* never wider than 90% of the screen */
+    margin: 20px auto;   /* center it with a little breathing room */
+    padding: 20px;       /* half the desktop padding */
+    font-size: 0.9rem;   /* a bit smaller text */
+    box-sizing: border-box;
+  }
+}
+
+/* Allow the nav to wrap on small screens */
+.header nav {
+  flex-wrap: wrap;        /* let logo/title and menu wrap */
+}
+
+.nav-links .menu {
+  display: flex;
+  flex-wrap: wrap;        /* allow menu items to wrap to next row */
+  justify-content: center;/* center them when wrapped */
+  width: 100%;            /* take full width so items can break lines */
+  margin-top: 10px;       /* small gap below your title/logo */
+}
+
+.menu li {
+  margin: 4px 8px;        /* smaller gaps between items */
+}
+
+/* Optional: reduce font-size on very small devices */
+@media (max-width: 480px) {
+  .menu li a {
+    font-size: 0.85rem;
+  }
+}
+
+/* Make the “Curriculum Vitae” and “Transcript of Records” headings blue */
+#cv h2,
+#grades h2 {
+  color: var(--primary-color);
+}
